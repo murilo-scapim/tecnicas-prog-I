@@ -9,10 +9,10 @@ print("3 - Consultar o saldo")
 print("4 - Sair")
 
 while sair != True:
-    operacao = int(input("Informe a operação: "))
+    operacao = input("Informe a operação: ")
 
     match operacao:
-        case 1:
+        case "1":
             valor_deposito = float(input("Informe o valor para deposito: "))
             if valor_deposito > 0 and type(valor_deposito) == float:
                 saldo += valor_deposito
